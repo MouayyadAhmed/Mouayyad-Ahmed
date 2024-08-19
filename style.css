@@ -4,6 +4,11 @@
     padding: 0;
     margin: 0;
 }
+:root {
+    --body-font__1: 'Young Serif', serif;
+    --body-font__2: 'Outfit', sans-serif;
+}
+
 .body{
     background-color: hsl(30, 54%, 90%);
    position: relative;
@@ -24,7 +29,7 @@
 }
 h3 {
     font-size: 16px;
-    font-family: 'young-serif', sans-serif;
+    font-family: var(--body-font__1);
     
     margin-left: 15px;
     
@@ -32,7 +37,7 @@ h3 {
 p{
     font-size: 8px;
     margin-left: 15px;
-    font-family:  'outfit',sans-serif;
+    font-family: var(--body-font__2);
 }
 .artbox{
     
@@ -43,7 +48,7 @@ p{
 }
 .boxtitle{
     margin: 10px;
-    font-family:  'outfit',sans-serif;
+    font-family: var(--body-font__2);
     font-size: 12px;
     font-weight: bold;
     color: hsl(332, 51%, 32%);
@@ -51,18 +56,18 @@ p{
 }
 .box{
     margin: 25px;
-    font-family:  'outfit',sans-serif;
+    font-family: var(--body-font__2);
     list-style:disc;
     font-size: 10px;
 }
 .ingredientstitle{
-    font-family: 'young-serif', sans-serif;
+    font-family: var(--body-font__1);
     font-size: 16px;
     color: hsl(14, 45%, 36%);
     margin-left: 15px;
 }
 .ingredientsbox{
-    font-family:  'outfit',sans-serif;
+    font-family: var(--body-font__2);
     margin: 25px;
     list-style:disc;
     font-size: 8px;
@@ -77,13 +82,13 @@ li{
    opacity: 0.3;
 }
 .instructionstitle{
-    font-family: 'young-serif', sans-serif;
+    font-family: var(--body-font__1);
     font-size: 16px;
     color: hsl(14, 45%, 36%);
     margin-left: 15px;
 }
 .instructionsbox {
-    font-family:  'outfit',sans-serif;
+    font-family: var(--body-font__2);
     
     margin: 25px;
     font-size: 8px;
@@ -95,13 +100,13 @@ ol li::marker{
     color: hsl(14, 45%, 36%);
 }
 .nutritontitle{
-    font-family: 'young-serif', sans-serif;
+    font-family: var(--body-font__1);
     font-size: 16px;
     color: hsl(14, 45%, 36%);
     margin-left: 15px;
 }
 table {
-    font-family: 'outfit', sans-serif;
+    font-family: var(--body-font__2);
     width: 90%;
     margin: 12px auto;
     font-size: 8px;
@@ -127,30 +132,5 @@ tr:last-child td {
  
 
 
-  @font-face {
-    font-family: 'young-serif';
-    font-style: normal;
-    font-weight: 400;
-    src: url('fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
-    
-}
-
-@font-face {
-    font-family: 'outfit';
-    font-style: normal;
-    font-weight: 400;
-    src: url('fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'outfit';
-    font-style: normal;
-    font-weight: 600;
-    src: url('fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'outfit';
-    font-style: normal;
-    font-weight: 700;
-    src: url('fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
-}
+  
 
